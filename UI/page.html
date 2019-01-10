@@ -3,21 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
     <title>iReporter</title>
   </head>
   <body>
-    <div class="navbar">
+    <nav>
+      <div class="toggle">
+        <i class="fa fa-bars menu" aria-hidden="true"></i>
+      </div>
       <ul>
         <li id="logo">iReporter</li>
         <li><a href="index.html">Home</a></li>
-
         <li><a href="page.html">Services</a></li>
-        <li><a href="view.html">view</a></li>
-        <li style="float:right" id="f"><a href="signup.html">Sign up</a></li>
-
-        <li style="float:right" id="f"><a href="signin.html">Sign in</a></li>
+        <li><a href="view.html">View</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="admin.html">Admin</a></li>
+        <div class="left">
+          <li><a href="signup.html">Sign up</a></li>
+          <li><a href="signin.html">Sign in</a></li>
+        </div>
       </ul>
-    </div>
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(".menu").click(function() {
+          $("ul").toggleClass("active");
+        });
+      });
+    </script>
     <div class="work">
       <form action="" method="POST">
         <p>Create a Red-flag:</p>
@@ -37,18 +54,16 @@
         </select>
 
         <p>Other:</p>
-        <textarea
-          name="comments"
-          cols="20"
-          rows="4"
-        >Enter your Complaints </textarea>
+        <textarea name="comments" cols="20" rows="4">
+Enter your Complaints </textarea
+        >
         <p>Please select an organisation:</p>
         <br />
         <input type="checkbox" name="service" value="ACCU" checked="service" />
         ACCU <input type="checkbox" name="service" value="UMEME" /> IGG <br />
         <p>Add an image or video:</p>
         <input type="file" name="pic" accept="image/*,video/*" />
-        <input type="submit" value="upload" />
+        <!-- <input type="submit" value="upload" /> -->
 
         <p>Add Location:</p>
         <input
@@ -67,11 +82,9 @@
         />
 
         <p>Create an Intervention:</p>
-        <textarea
-          name="comments"
-          cols="20"
-          rows="4"
-        >Enter your Complaints </textarea>
+        <textarea name="comments" cols="20" rows="4">
+Enter your Complaints </textarea
+        >
 
         <p>Please select an organisation:</p>
         <br />
@@ -86,7 +99,7 @@
         <input type="checkbox" name="service" value="NWSC" /> UNRA <br />
         <p>Add an image or video:</p>
         <input type="file" name="pic" accept="image/*,video/*" />
-        <input type="submit" value="upload" /><br />
+        <!-- <input type="submit" value="upload" /><br /> -->
         <p>Add Location:</p>
         <input
           type="text"
