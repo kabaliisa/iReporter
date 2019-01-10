@@ -3,28 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
     <title>iReporter</title>
   </head>
   <body>
-    <div class="navbar">
+    <nav>
+      <div class="toggle">
+        <i class="fa fa-bars menu" aria-hidden="true"></i>
+      </div>
       <ul>
         <li id="logo">iReporter</li>
         <li><a href="index.html">Home</a></li>
-
         <li><a href="page.html">Services</a></li>
-        <li><a href="view.html">view</a></li>
-        <li style="float:right" id="f"><a href="signup.html">Sign up</a></li>
-
-        <li style="float:right" id="f"><a href="signin.html">Sign in</a></li>
+        <li><a href="view.html">View</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="admin.html">Admin</a></li>
+        <div class="left">
+          <li><a href="signup.html">Sign up</a></li>
+          <li><a href="signin.html">Sign in</a></li>
+        </div>
       </ul>
-    </div>
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(".menu").click(function() {
+          $("ul").toggleClass("active");
+        });
+      });
+    </script>
     <div>
       <table id="intervention">
         <tr>
+          <th>Name</th>
           <th>Red-flag</th>
           <th>Intervention</th>
 
           <th>status</th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </tr>
+        <tr>
+          <td>Solomon Kabaliisa</td>
+          <td>Bribe</td>
+          <td>Accident</td>
+          <td>Resolved</td>
+          <td><a href="">Edit</a></td>
+          <td><a href="">Delete</a></td>
+        </tr>
+        <tr>
+          <td>John Mutaka</td>
+          <td>Bribe</td>
+          <td>Kidnap</td>
+          <td>under-Investigation</td>
+          <td><a href="">Edit</a></td>
+          <td><a href="">Delete</a></td>
         </tr>
       </table>
     </div>
