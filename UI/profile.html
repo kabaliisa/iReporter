@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>iReporter-profile</title>
+  </head>
+  <body>
+    <nav>
+      <div class="toggle">
+        <i class="fa fa-bars menu" aria-hidden="true"></i>
+      </div>
+      <ul>
+        <li id="logo">iReporter</li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="page.html">Services</a></li>
+        <li><a href="view.html">View</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="admin.html">Admin</a></li>
+        <div class="left">
+          <li><a href="signup.html">Sign up</a></li>
+          <li><a href="signin.html">Sign in</a></li>
+        </div>
+      </ul>
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(".menu").click(function() {
+          $("ul").toggleClass("active");
+        });
+      });
+    </script>
+    <div class="profile">
+      <p>Solomon Kabaliisa</p>
+      <img src="images/Blank-profile.png" alt="" /><br />
+    </div>
+    <p id="pt">Resolved records.</p>
+    <div class="profile-table">
+      <div>
+      <table >
+        <tr>
+          <th>Red-flags</th>
+          <th>Interventions</th>
+          <th>status</th>
+        </tr>
+        <tr>
+          <td><a href="">5</a></td>
+          <td><a href="">3</a></td>
+          <td>Resolved</td>
+        </tr>
+      </table>
+    </div>
+    
+  <p style="text-align:center;">Records Under-Investigation</p>
+    <div class="profile-table">
+      <table>
+        <tr>
+          <th>Red-flags</th>
+          <th>Interventions</th>
+          <th>status</th>
+        </tr>
+        <tr>
+          <td><a href="">5</a></td>
+          <td><a href="">3</a></td>
+          <td>Under-Investigation</td>
+        </tr>
+      </table>
+    </div>
+
+    <p  style="text-align: center;">Rejected Records.</p>
+    <div class="profile-table">
+      <table>
+        <tr>
+          <th>Red-flags</th>
+          <th>Interventions</th>
+          <th>status</th>
+        </tr>
+        <tr>
+          <td><a href="">5</a></td>
+          <td><a href="">3</a></td>
+          <td>Rejected</td>
+        </tr>
+      </table>
+    </div>
+
+    <p style="text-align:center">List of red-flag/intervention records</p>
+    <div class="profile-table">
+      <table>
+        <tr>
+          <th>Red-flags</th>
+          <th>Interventions</th>
+        </tr>
+        <tr>
+          <td>Bribe</td>
+          <td>floods</td>
+        </tr>
+        <tr>
+          <td>Fraud</td>
+          <td>Theft</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
