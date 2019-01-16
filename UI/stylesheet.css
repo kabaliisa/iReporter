@@ -271,16 +271,18 @@ div .profile-table {
   font-family: Arial, Helvetica, sans-serif;
 }
 button {
-  background-color: red;
-  float: right;
+  background-color: #002b44;
   border: none;
   color: white;
   cursor: pointer;
   padding: 20px;
   margin-top: 5%;
-  /* margin-right: 3%; */
+  border-radius: 4px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+}
+.button {
+  text-align: center;
 }
