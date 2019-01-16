@@ -59,8 +59,6 @@ ul li a {
   .left {
     display: block;
     text-align: center;
-    /* display: inline-block; */
-    /* padding: 20px; */
   }
   .active {
     display: block;
@@ -271,4 +269,18 @@ div .profile-table {
   margin-left: 5%;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
+}
+button {
+  background-color: red;
+  float: right;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+  margin-top: 5%;
+  /* margin-right: 3%; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
